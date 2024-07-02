@@ -27,3 +27,15 @@ print("Example of ranges: " + str(thislist[:4]))
 # by leaving out the end value, the range will go on to the end of the list:
 # this example returns the items from "cherry" to the end:
 print("Another example of ranges:" + str(thislist[2:]))
+
+# Range of Negative Indexes 
+# Specify negative indexes if you want to start the search from the end of the list:
+# This examples returns the items from "orange" (-4) to, but NOT including "mango" (-1):
+thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+print(thislist[-4:-1])
+
+# Check if Item exists
+# To determine if a specified item is present in a list use the "in" keyword:
+thislist = ["apple", "banana", "cherry"]
+if "apple" in thislist:
+    print("Yes, *apple* is in the fruits list.")
