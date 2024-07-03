@@ -36,3 +36,14 @@ newlist = [x for x in range(10)]
 
 # same example, but with a condition ---> accept only numbers lower than 5. 
 newlist = [x for x in range(10) if x < 5]
+
+# Expression 
+# The expression is the current item in the iteration, but it is also the outcome, which you can manipulate before
+# it ends up like a list item in the new list:
+newlist = [x.upper() for x in fruits]
+
+# You can set the outcome to whatever you like:
+newlist = ["hello" for x in fruits]
+
+# The expression can also contain conditions, not like a filter, but as a way to manipulate the outcome:
+newlist = [x if x != "banana" else "orange" for x in fruits] # return the item if it is not banana, if it is banana return orange
